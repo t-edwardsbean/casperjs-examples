@@ -13,6 +13,7 @@ var casper = require("casper").create({
     verbose: true,
     logLevel: 'info'
 });
+phantom.outputEncoding = "gbk";
 var utils = require('utils');
 var uu = 'http://';
 var AIMA_LOGIN_URL = 'http://api.f02.cn/http.do?action=loginIn&uid=2509003147&pwd=1314520';
@@ -31,8 +32,10 @@ function loginAIMA(AIMA_LOGIN_URL) {
 
 casper.start("http://passport.sohu.com/web/dispatchAction.action?appid=1113&ru=http://mail.sohu.com/reg/signup_success.jsp", function() {
     //Login first
-    var response = this.evaluate(loginAIMA, {AIMA_LOGIN_URL: AIMA_LOGIN_URL});
-    this.log("Server response:" + response, 'info');
+    //var response = this.evaluate(loginAIMA, {AIMA_LOGIN_URL: AIMA_LOGIN_URL});
+    //this.log("Server response:" + response, 'info');
+
+
 
     //this.waitForSelector("#yzm_img", (function() {
     //    this.captureSelector(new Date().getTime() + '.png', "#yzm_img");
