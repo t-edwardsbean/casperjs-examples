@@ -1,0 +1,17 @@
+{
+  "ignoreSslErrors": true,
+
+  "diskCacheEnabled": true,
+
+  "webSecurityEnabled": false,
+
+  "maxDiskCacheSize": 1000,
+
+  "outputEncoding": "gbk",
+
+  "casperPath": "E:/GitHub/registry-machine/dependecy/casperjs",
+
+  "injectJs": "E:/GitHub/registry-machine/dependecy/casperjs/bin/bootstrap.js",
+
+  "webSecurity": false
+}
